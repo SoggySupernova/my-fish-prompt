@@ -33,7 +33,7 @@ function fish_prompt
     set BANNER_LEFT_COLOR C0C0D0
     set BANNER_MIDDLE_COLOR 3e937a
     set BANNER_RIGHT_COLOR 40405B
-    set BANNER_LEADING_BLOCK " "
+    # set BANNER_LEADING_BLOCK " "
     set SPLIT_1 false
     set SPLIT_2 true
 
