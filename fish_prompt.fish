@@ -33,14 +33,14 @@ function fish_prompt
     set BANNER_LEFT_COLOR C0C0D0
     set BANNER_MIDDLE_COLOR 3e937a
     set BANNER_RIGHT_COLOR 40405B
-    set SPLIT_1 true
-    set SPLIT_2 false
+    set BANNER_LEADING_BLOCK " "
+    set SPLIT_1 false
+    set SPLIT_2 true
 
     echo
 
     # Leading rounded block
-    echo -n " "(set_color --background normal)
-    echo -n (set_color $BANNER_LEFT_COLOR)""
+    echo -n (set_color --background normal)(set_color $BANNER_LEFT_COLOR)$BANNER_LEADING_BLOCK
     echo -n (set_color normal)
 
     # Left segment (user)
