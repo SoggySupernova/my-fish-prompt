@@ -34,6 +34,7 @@ function fish_prompt
     set BANNER_MIDDLE_COLOR 3e937a
     set BANNER_RIGHT_COLOR 40405B
     # set BANNER_LEADING_BLOCK " "
+    set BANNER_LAST_CHARACTER "\$"
     set SPLIT_1 false
     set SPLIT_2 true
 
@@ -69,7 +70,7 @@ function fish_prompt
     _draw_segment \
         $BANNER_RIGHT_COLOR \
         normal \
-        "󰉋 "(prompt_pwd)" \$" \
+        "󰉋 "(prompt_pwd)" $BANNER_LAST_CHARACTER" \
         $last_color \
         $SPLIT_2
 
